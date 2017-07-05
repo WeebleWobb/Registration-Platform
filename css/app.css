@@ -15,22 +15,6 @@
 	height: 600px;
 }
 
-.aspot .btn-primary {
-	background-color: #fff;
-	border: solid 1px #333;
-	color: #333;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: .875em;
-	cursor: pointer;
-	padding: 10px 20px;
-}
-
-.aspot .btn-primary:hover {
-	color: #fff;
-	background-color: #333;
-}
-
 .aspot > .m-align {
 	display: table-cell;
 	vertical-align: middle;
@@ -60,6 +44,52 @@ body {
 	font-size: 100%;
 	font-family: 'Roboto', sans-serif;
 	background-color: #e2e2e2;
+}
+
+.btn-primary {
+	background-color: #fff;
+	border: solid 1px #333;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .875em;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #333;
+	text-decoration: none;
+}
+
+.btn-secondary {
+	color: #fff;
+	background-color: #333;
+	border: solid 1px #333;
+	cursor: pointer;
+	font-size: .875em;
+	padding: 10px 20px;
+}
+
+.btn-secondary a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn-secondary a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.btn-secondary:hover {
+	text-decoration: none;
+	color: #333;
+	background-color: #fff;
+}
+
+.disclaimer {
+	font-size: .875em;
 }
 
 footer {
@@ -92,6 +122,10 @@ hr {
 	font-variant: small-caps;
 }
 
+.small-text {
+	font-size: .75em;
+}
+
 #wrapper {
 	max-width: 1920px;
 	margin: 0 auto;
@@ -103,44 +137,97 @@ hr {
 	Typogarphy
 ===================================================== */
 
-	h1 {
-		font-size: 3.5em;
-		font-weight: 900;
-	}
+h1 {
+	font-size: 3.5em;
+	font-weight: 900;
+}
 
-	h2 {
-		font-size: 2.25em;
-		font-weight: 700;
-	}
+h2 {
+	font-size: 2.25em;
+	font-weight: 700;
+}
 
-	h3 {
-		font-size: 1.75em;
-		font-weight: 600;
-	}
+h3 {
+	font-size: 1.75em;
+	font-weight: 600;
+}
 
-	h4 {
-		font-size: 1.3125em;
-	}
+h4 {
+	font-size: 1.3125em;
+}
 
-	h5 {
-		font-size: 1.125em;
-		font-weight: 600;
-	}
+h5 {
+	font-size: 1.125em;
+	font-weight: 600;
+}
 
-	h6 {
-		font-size: 1em;
-		font-weight: 600;
-	}
+h6 {
+	font-size: 1em;
+	font-weight: 600;
+}
 
-	p {
-		font-size: 1em;
-		font-weight: 300;
-		line-height: 1.5em;
-	}
+p {
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+/* ====================================================
+	Registration
+===================================================== */
+	
+.card form {
+	padding: 20px 0 30px;
+}
+
+#registration .card {
+	border: 1px solid #b9b9b9;
+	border-bottom: none;
+	border-radius: 0;
+}
+
+#registration .card:last-child {
+	border-bottom: 1px solid #b9b9b9;
+}
+
+.registration-header {
+	border-bottom: 1px solid #b9b9b9;
+	background-color: #f1f1f1;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+.registration-header a {
+	color: #333;
+}
+
+#registration hr {
+	margin: 10px 0 20px;
+	border-color: #ddd;
+}
+
+.review-info {
+	background-color: #f1f1f1;
+	padding: 20px 15px;
+	border: 1px solid #cecece;
+}
+
+.review-info hr {
+	margin: 15px 0 20px;
+	border-color: #bbb;
+}
+
 
 /* ====================================================
 	Media Queries 
 ===================================================== */
+
+@media (min-width: 768px) {
+
+	.rwd-line {
+		display: block;
+	}
+}
 
 @media (min-width: 1200px) {
 

@@ -5,3 +5,8 @@
  * Copyright (C) 2017 synchronygroup.com - A project by Juan D. Bolaños
  */
 
+$(document).ready(function() {
+
+	
+
+});
