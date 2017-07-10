@@ -12,7 +12,6 @@
 .aspot {
 	display: table;
 	width: 100%;
-	height: 600px;
 }
 
 .aspot > .m-align {
@@ -27,9 +26,7 @@
 
 .aspot ul li {
 	font-weight: bold;
-	padding: 0 15px;
-	display: inline-block;
-	border-right: 1px solid #333;
+	display: block;
 }
 
 .aspot ul li:first-child {
@@ -55,6 +52,7 @@ body {
 	font-size: .875em;
 	cursor: pointer;
 	padding: 10px 20px;
+	display: inline-block;
 }
 
 .btn-primary:hover {
@@ -70,6 +68,7 @@ body {
 	cursor: pointer;
 	font-size: .875em;
 	padding: 10px 20px;
+    display: inline-block;
 }
 
 .btn-secondary a {
@@ -177,7 +176,7 @@ p {
 ===================================================== */
 	
 .card form {
-	padding: 20px 0 30px;
+	padding: 20px 20px 30px;
 }
 
 #registration .card {
@@ -193,7 +192,7 @@ p {
 .registration-header {
 	border-bottom: 1px solid #b9b9b9;
 	background-color: #f1f1f1;
-	padding: 10px 0;
+	padding: 10px 20px;
 	font-weight: bold;
 }
 
@@ -222,10 +221,37 @@ p {
 	Media Queries 
 ===================================================== */
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
+	.aspot ul li {
+		font-weight: bold;
+		padding: 0 15px;
+		display: inline-block;
+		border-right: 1px solid #333;
+	}
+}
 
+@media (min-width: 768px) {
+	
+
+	
+}
+
+@media (min-width: 992px) {
+
+	.aspot {
+		height: 600px;
+	}
+	
 	.rwd-line {
 		display: block;
+	}
+
+	.card form {
+		padding: 20px 0 30px;
+	}
+
+	.registration-header {
+		padding: 10px 0;
 	}
 }
 
